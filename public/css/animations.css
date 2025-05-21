@@ -1,0 +1,42 @@
+/* Магические эффекты */
+.magic-glow {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6;
+    }
+}
+
+.magic-orb {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, #4a6f28, transparent 70%);
+    border-radius: 50%;
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+/* Плавные переходы для табов */
+.tab-content {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    height: 0;
+    overflow: hidden;
+}
+
+.tab-content.active {
+    opacity: 1;
+    transform: translateY(0);
+    height: auto;
+}
