@@ -28,7 +28,7 @@
     body {
       background-color: var(--main-bg);
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url('https://s183.convertio.me/p/agnAMPWnaChzSD9yRVE33A/0fa5f04273f309b541014743a0219203/ChatGPT-Image-21-мая-2025-г._-17_01_47.webp');
+                  url('https://dragon.online-convert.com/ru/download-file/10f56197-0545-435a-92a6-1de67fa3a588/8e168123-3537-4b65-bdb6-459e221dccda');
       background-size: 64px 64px;
       font-family: 'Press Start 2P', 'Courier New', monospace;
       color: var(--text-primary);
@@ -274,6 +274,35 @@
       font-size: 0.8rem;
     }
 
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .team-member {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: var(--pixel-border);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .level-card {
+      background-color: rgba(0, 0, 0, 0.5);
+      border: var(--pixel-border);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .slogan {
+      text-align: center;
+      font-size: 1.2rem;
+      color: var(--accent-blue);
+      margin: 1rem 0;
+      text-shadow: 2px 2px 0 #000;
+    }
+
     @media (max-width: 500px) {
       .pixel-title {
         font-size: 1.5rem;
@@ -291,129 +320,124 @@
 <body>
   <header>
     <h1 class="pixel-title">FARM & DUNGEONS</h1>
+    <p class="slogan">Фермерствуй днём, сражайся ночью!</p>
     <nav class="pixel-nav">
       <a href="#" class="active" data-tab="about">Главная</a>
-      <a href="#" data-tab="tech">Технологии</a>
-      <a href="#" data-tab="world">Мир</a>
-      <a href="#" data-tab="races">Расы</a>
-      <a href="#" data-tab="characters">Персонажи</a>
+      <a href="#" data-tab="team">Команда</a>
+      <a href="#" data-tab="game">Об игре</a>
+      <a href="#" data-tab="heroes">Герои</a>
+      <a href="#" data-tab="levels">Уровни</a>
     </nav>
   </header>
 
   <main class="pixel-container">
-    <!-- О проекте -->
+    <!-- Главная -->
     <section id="about" class="tab-content active">
       <div class="pixel-card">
-        <h2>О ПРОЕКТЕ</h2>
-        <p><strong>Farm & Dungeons</strong> - курсовая работа для МВЕК, 3D фэнтези-РПГ от первого лица с элементами симулятора фермы.</p>
-        <p>Игрок бросает работу охранника и начинает новую жизнь на старой ферме в забытой деревне.</p>
-        <p>Особенности игры:</p>
+        <h2>О НАШЕЙ КОМАНДЕ</h2>
+        <p>Мы - команда энтузиастов, создающая уникальную 3D фэнтези-РПГ с элементами симулятора фермы.</p>
+        <button class="pixel-button" id="team-button">УЗНАТЬ БОЛЬШЕ О КОМАНДЕ</button>
+      </div>
+    </section>
+
+    <!-- Команда -->
+    <section id="team" class="tab-content">
+      <div class="pixel-card">
+        <h2>НАША КОМАНДА</h2>
+        
+        <h3 style="margin: 1rem 0; color: var(--accent-blue);">Программисты:</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <h3>Аширов Тимур</h3>
+            <p>Программист</p>
+            <p>Системный архитектор</p>
+          </div>
+          <div class="team-member">
+            <h3>Салмин Матвей</h3>
+            <p>Программист</p>
+            <p>Геймплейные механики</p>
+          </div>
+          <div class="team-member">
+            <h3>Скоробогатов Алексей</h3>
+            <p>Главный программист</p>
+            <p>Руководитель разработки</p>
+          </div>
+          <div class="team-member">
+            <h3>Ильин Станислав</h3>
+            <p>Программист</p>
+            <p>AI и алгоритмы</p>
+          </div>
+        </div>
+        
+        <h3 style="margin: 1rem 0; color: var(--accent-blue);">Реклама и маркетинг:</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <h3>Нелюбина София</h3>
+            <p>Реклама</p>
+            <p>SMM и продвижение</p>
+          </div>
+          <div class="team-member">
+            <h3>Ульмасова Диляра</h3>
+            <p>Реклама</p>
+            <p>Маркетинговые стратегии</p>
+          </div>
+        </div>
+        
+        <h3 style="margin: 1rem 0; color: var(--accent-blue);">Дизайн:</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <h3>Татаркина Ульяна</h3>
+            <p>Дизайнер</p>
+            <p>2D/3D графикa</p>
+          </div>
+          <div class="team-member">
+            <h3>Маркина Настя</h3>
+            <p>Дизайнер</p>
+            <p>UI/UX дизайн</p>
+          </div>
+        </div>
+        
+        <h3 style="margin: 1rem 0; color: var(--accent-blue);">Бизнес:</h3>
+        <div class="team-grid">
+          <div class="team-member">
+            <h3>Пономарев Григорий</h3>
+            <p>Торговое дело</p>
+            <p>Финансы и партнерства</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Об игре -->
+    <section id="game" class="tab-content">
+      <div class="pixel-card">
+        <h2>ОБ ИГРЕ</h2>
+        <p><strong>Farm & Dungeons</strong> - это уникальное сочетание симулятора фермы и классического РПГ с элементами подземелий.</p>
+        
+        <h3 style="margin: 1.5rem 0 0.5rem;">Основные особенности:</h3>
         <ul style="margin: 1rem 0; padding-left: 1.5rem;">
-          <li>Фермерство с элементами магии</li>
-          <li>Исследование подземелий</li>
-          <li>Взаимодействие с жителями</li>
-          <li>Развитие персонажа и навыков</li>
-          <li>Комедийный фэнтези-сеттинг</li>
+          <li>Динамичная система фермерства с магическими растениями</li>
+          <li>Проработанная боевая система</li>
+          <li>Нелинейный сюжет с множеством концовок</li>
+          <li>Система отношений с жителями деревни</li>
+          <li>Кастомизация персонажа и фермы</li>
         </ul>
+        
         <button class="pixel-button" id="demo-button">СКАЧАТЬ ДЕМО</button>
       </div>
     </section>
 
-    <!-- Технологии -->
-    <section id="tech" class="tab-content">
+    <!-- Герои -->
+    <section id="heroes" class="tab-content">
       <div class="pixel-card">
-        <h2>ТЕХНИЧЕСКИЕ ДАННЫЕ</h2>
-        
-        <div class="tech-grid">
-          <div class="tech-item">
-            <div class="tech-icon">U6</div>
-            <h3>Unity 6</h3>
-            <p>Новая версия движка с URP рендером</p>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">3D</div>
-            <h3>3D Графика</h3>
-            <p>Low/mid poly стиль с hand-painted текстурами</p>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">C#</div>
-            <h3>C#</h3>
-            <p>Основной язык программирования</p>
-          </div>
-          <div class="tech-item">
-            <div class="tech-icon">PC</div>
-            <h3>ПК версия</h3>
-            <p>Средние системные требования</p>
-          </div>
-        </div>
-        
-        <p style="margin-top: 1.5rem;">Графический стиль вдохновлен DOTA 2, Overwatch и Warcraft 3.</p>
-        <p>Музыка: стилизация под Stardew Valley и классические произведения.</p>
-      </div>
-    </section>
-
-    <!-- Мир -->
-    <section id="world" class="tab-content">
-      <div class="pixel-card">
-        <h2>МИР АНТАРАС</h2>
-        <p>Вселенная, где магия - особая форма энергии, оставшаяся после "большого взрыва".</p>
-        <p>Действие происходит на континенте Кин-Ронджал, в Империи Креас, в 624 году от рождения династии Явбуков.</p>
-        
-        <h3 style="margin: 1.5rem 0 0.5rem;">Ключевые события:</h3>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">1793 г. до р.дЯ</div>
-            <p>Орки прибывают на континент с рабами</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">1717 г. до р.дЯ</div>
-            <p>Разрушение оркской столицы Ар-Ботар</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">1410 г. до р.дЯ</div>
-            <p>Луседский приказ о войне с эльфами</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">126 г. р.дЯ</div>
-            <p>Окончание Великой войны</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Расы -->
-    <section id="races" class="tab-content">
-      <div class="pixel-card">
-        <h2>РАСЫ МИРА</h2>
-        
-        <div class="race-card">
-          <h3 class="race-title">ЛЮДИ</h3>
-          <p>Жестокие и алчные, доминируют на континенте благодаря своей агрессии.</p>
-        </div>
-        
-        <div class="race-card">
-          <h3 class="race-title">ЭЛЬФЫ</h3>
-          <p>Умные и сдержанные, живут на 20 лет дольше людей. Мастера магии.</p>
-        </div>
-        
-        <div class="race-card">
-          <h3 class="race-title">ОРКИ</h3>
-          <p>Кровожадные гиганты (250 см), глупые и свирепые. Живут племенами.</p>
-        </div>
-        
-        <div class="race-card">
-          <h3 class="race-title">ДИКИЕ ЭЛЬФЫ</h3>
-          <p>Агрессивные (205 см), хитрые, консерваторы. Мастера засад.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Персонажи -->
-    <section id="characters" class="tab-content">
-      <div class="pixel-card">
-        <h2>ПЕРСОНАЖИ</h2>
+        <h2>ГЕРОИ ИГРЫ</h2>
         
         <div class="character-grid">
+          <div class="character-card">
+            <div class="character-image" style="background-image: url('https://via.placeholder.com/150x100?text=Главный')"></div>
+            <h3>Главный герой</h3>
+            <p>Бывший охранник</p>
+          </div>
           <div class="character-card">
             <div class="character-image" style="background-image: url('https://via.placeholder.com/150x100?text=Виктор')"></div>
             <h3>Виктор</h3>
@@ -434,6 +458,38 @@
             <h3>Гелиос</h3>
             <p>Старейшина</p>
           </div>
+          <div class="character-card">
+            <div class="character-image" style="background-image: url('https://via.placeholder.com/150x100?text=Лилит')"></div>
+            <h3>Лилит</h3>
+            <p>Таинственная незнакомка</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Уровни -->
+    <section id="levels" class="tab-content">
+      <div class="pixel-card">
+        <h2>УРОВНИ ИГРЫ</h2>
+        
+        <div class="level-card">
+          <h3>Глава 1: Новая жизнь</h3>
+          <p>Переезд на старую ферму, знакомство с жителями деревни</p>
+        </div>
+        
+        <div class="level-card">
+          <h3>Глава 2: Тайны подземелий</h3>
+          <p>Первые исследования древних руин под фермой</p>
+        </div>
+        
+        <div class="level-card">
+          <h3>Глава 3: Проклятие Явбуков</h3>
+          <p>Раскрытие тайн древней династии</p>
+        </div>
+        
+        <div class="level-card">
+          <h3>Глава 4: Последний урожай</h3>
+          <p>Финальное противостояние с древним злом</p>
         </div>
       </div>
     </section>
@@ -442,6 +498,7 @@
   <footer>
     <p>© 2025 Farm & Dungeons. Курсовая работа для МВЕК.</p>
     <p style="color: var(--text-secondary);">3D фэнтези-РПГ на Unity 6</p>
+    <p style="margin-top: 1rem;">Сайт размещен на <a href="#" style="color: var(--accent-blue);">хостинге GitHub Pages</a></p>
   </footer>
 
   <!-- Звуковые эффекты -->
@@ -454,7 +511,7 @@
   </audio>
   
   <audio id="button-sound" preload="auto">
-    <source src=https://zvukogram.com/index.php?r=site/download&id=43854&type=wav" type="audio/mpeg">
+    <source src="https://zvukogram.com/index.php?r=site/download&id=43854&type=wav" type="audio/mpeg">
   </audio>
 
   <script>
@@ -496,11 +553,24 @@
     });
     
     // Обработчики для карточек
-    const interactiveElements = document.querySelectorAll('.tech-item, .race-card, .character-card, .timeline-item');
+    const interactiveElements = document.querySelectorAll('.team-member, .character-card, .level-card');
     interactiveElements.forEach(el => {
       el.addEventListener('mouseenter', () => playSound(hoverSound));
       el.addEventListener('click', () => playSound(clickSound));
     });
+    
+    // Кнопка "Узнать больше о команде"
+    const teamButton = document.getElementById('team-button');
+    if(teamButton) {
+      teamButton.addEventListener('click', function() {
+        playSound(buttonSound);
+        document.querySelectorAll('.pixel-nav a').forEach(l => l.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        document.querySelector('[data-tab="team"]').classList.add('active');
+        document.getElementById('team').classList.add('active');
+      });
+    }
     
     // Специальная кнопка "Скачать демо"
     const demoButton = document.getElementById('demo-button');
